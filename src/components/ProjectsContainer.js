@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 
 class ProjectsContainer extends Component {
   constructor(props) {
@@ -10,8 +9,8 @@ class ProjectsContainer extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3001/api/v1/projects.json')
-    .then(response => {
+    fetch('http://localhost:3001/api/v1/projects.json')
+     .then(response => {
       this.setState({projects: response.data})
     })
     .catch(error => console.log(error))
