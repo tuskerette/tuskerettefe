@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Project from './Project'
 
 class ProjectsContainer extends Component {
   constructor(props) {
@@ -22,17 +23,9 @@ class ProjectsContainer extends Component {
   render() {
     return (
       <div>
-	    {this.state.projects && this.state.projects.map((project) => {
-              return(
-                <div className="project-panel" key={project.id} >
-                  <h4>{project.title}</h4>
-	          <p>{project.app_link}</p>	  
-                  <p>{project.date_created}</p>
-                  <p>{project.github_link}</p>
-		  <p>{project.description}</p>
-		</div>
-              )       
-            })}
+        {this.state.projects && this.state.projects.map((project) => {
+          return (<Project project={project} key={project.id} />)
+        })}
       </div>
     );
   }
