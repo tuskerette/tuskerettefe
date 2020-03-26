@@ -3,10 +3,24 @@
 }
 
 .App-header {
-  min-height: 50vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.project-panel {
+  background: #6f2518;  
+  border: 4px dashed #c14829;
+  border-radius: 10px;
+  color: #fff;
+  float: left;
+  font-size: calc(10px + 1vmin);
+  height: 250px;
+  margin: 1em;
+  padding: 1.2em;
+  text-align: left;
+  width: 350px;
 }
