@@ -12,10 +12,9 @@
 }
 
 .project-panel {
-  background: #6f2518;  
-  border: 4px dashed #c14829;
+  background: #efcf82;
   border-radius: 10px;
-  color: #fff;
+  color: #652e05;
   float: left;
   font-size: calc(10px + 1vmin);
   height: 250px;
@@ -26,5 +25,5 @@
 }
 
 a {
-  color: #ce3b3b;
+  color: #1e5213;
 }
