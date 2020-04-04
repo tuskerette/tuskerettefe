@@ -10,7 +10,8 @@ class ProjectsContainer extends Component {
   }
 
   componentDidMount() {
-    return fetch('https://tuskerette.herokuapp.com/api/v1/projects.json')
+    const env_url = ((process.env.NODE_ENV === 'production') ? 'https://tuskerette.herokuapp.com' : 'http://localhost:3001');
+    return fetch(env_url + '/api/v1/projects.json')
     .then(response => response.json())
     .then(response => {
       this.setState({projects: response})
