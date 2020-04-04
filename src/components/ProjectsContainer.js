@@ -10,7 +10,7 @@ class ProjectsContainer extends Component {
   }
 
   componentDidMount() {
-    return fetch('http://localhost:3001/api/v1/projects.json')
+    return fetch('https://tuskerette.herokuapp.com/api/v1/projects.json')
     .then(response => response.json())
     .then(response => {
       this.setState({projects: response})
